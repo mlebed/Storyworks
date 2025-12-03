@@ -375,3 +375,160 @@ footer {
     align-items: center;
   }
 }
+/* ---------- HOW IT WORKS ---------- */
+.how-it-works {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.step-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+.step-card p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* ---------- FEATURES & BENEFITS ---------- */
+.benefits {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.benefit-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.benefit {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 25px 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.benefit h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+.benefit p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+}
+
+/* ---------- MOCKUP GALLERY - FULL WIDTH ---------- */
+.mockup-gallery {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.mockup-gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.mockup-placeholder-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mockup-placeholder {
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  height: 400px; /* you can adjust height as needed */
+  width: 100%;   /* full width of the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .mockup-placeholder {
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mockup-placeholder {
+    height: 200px;
+  }
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  .step-card, .benefit {
+    width: 45%;
+  }
+}
+
+@media (max-width: 640px) {
+  .steps, .benefit-grid, .mockup-placeholder-gallery {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .step-card, .benefit, .mockup-placeholder {
+    width: 90%;
+  }
+}
+
