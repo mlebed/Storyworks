@@ -37,11 +37,12 @@ header {
 .nav-links li a {
   font-weight: 600;
   font-size: 16px;
+  color: #1c1c1c;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #0072ff;
+  color: #2b8afc;
 }
 
 .logo img {
@@ -55,7 +56,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 100px 60px;
-  background: linear-gradient(90deg, #f5f7ff, #ffffff);
+  background: #f5f7ff;
 }
 
 .hero-content {
@@ -67,6 +68,7 @@ header {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #1c1c1c;
 }
 
 .hero-content p {
@@ -80,14 +82,15 @@ header {
   font-weight: 600;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  background: linear-gradient(90deg, #2b8afc, #00c6ff);
   color: white;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .hero-content button:hover {
   transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(43,138,252,0.3);
 }
 
 .hero-image {
@@ -101,7 +104,7 @@ header {
   width: 80%;
   max-width: 500px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
 /* ---------- PROBLEM & SOLUTION ---------- */
@@ -115,24 +118,28 @@ header {
   font-size: 2rem;
   margin-bottom: 40px;
   font-weight: 700;
+  color: #1c1c1c;
 }
 
 .problem-solution p {
   font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto 20px auto;
+  color: #333333;
 }
 
 /* ---------- BENEFITS ---------- */
 .benefits {
   padding: 80px 60px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .benefits h2 {
   font-size: 2rem;
   margin-bottom: 40px;
   font-weight: 700;
+  color: #1c1c1c;
 }
 
 .benefit-grid {
@@ -144,25 +151,27 @@ header {
 
 .benefit {
   flex: 1 1 250px;
-  background-color: #ffffff;
+  background-color: #f5f7ff;
   border-radius: 15px;
   padding: 40px 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .benefit:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 
 .benefit h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
+  color: #1c1c1c;
 }
 
 .benefit p {
   font-size: 1rem;
+  color: #333333;
 }
 
 /* ---------- FEATURES PAGE ---------- */
@@ -176,10 +185,12 @@ header {
   font-size: 2.8rem;
   margin-bottom: 20px;
   font-weight: 700;
+  color: #1c1c1c;
 }
 
 .features-hero p {
   font-size: 1.2rem;
+  color: #333333;
 }
 
 .features-list {
@@ -196,13 +207,13 @@ header {
   padding: 30px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 
 .feature-item img {
@@ -224,8 +235,14 @@ header {
   padding: 30px;
   margin: 15px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 
 .testimonial p {
@@ -248,6 +265,7 @@ header {
 .about-us h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
+  color: #1c1c1c;
 }
 
 .team-grid {
@@ -261,7 +279,7 @@ header {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   text-align: center;
   flex: 1 1 220px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -269,7 +287,7 @@ header {
 
 .team-member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 
 .team-member img {
@@ -279,6 +297,7 @@ header {
   margin-bottom: 15px;
 }
 
+/* ---------- FORM ---------- */
 .contact-form {
   padding: 80px 60px;
   text-align: center;
@@ -301,17 +320,18 @@ input, textarea {
 
 button[type="submit"] {
   padding: 15px;
-  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  background: linear-gradient(90deg, #2b8afc, #00c6ff);
   color: white;
   font-weight: 600;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 button[type="submit"]:hover {
   transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(43,138,252,0.3);
 }
 
 /* ---------- FOOTER ---------- */
@@ -321,6 +341,7 @@ footer {
   text-align: center;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
   font-size: 0.9rem;
+  color: #1c1c1c;
 }
 
 /* ---------- RESPONSIVE ---------- */
