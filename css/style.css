@@ -122,6 +122,7 @@ header {
   margin-bottom: 40px;
   font-weight: 700;
   color: #1c1c1c;
+  text-align: center;
 }
 
 .problem-solution p {
@@ -129,6 +130,7 @@ header {
   max-width: 700px;
   margin: 0 auto 20px auto;
   color: #333333;
+  text-align: center;
 }
 
 /* ---------- BENEFITS ---------- */
@@ -601,6 +603,8 @@ footer {
   text-align: center;
   margin: 10px auto 20px;
 }
+
+
 
 /* Botón expandir */
 .expand-btn {
