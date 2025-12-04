@@ -90,16 +90,16 @@
       <h2>Product Mockups</h2>
     <div class="mockup-placeholder-gallery">
       <div class="mockup-placeholder">
-        <img src="images/mockup1.jpg" alt="Mockup 1">
+        <img src="images/mockup1.jpg" alt="Mockup 1" onclick="openLightbox(this)">
       </div>
       <div class="mockup-placeholder">
-        <img src="images/mockup2.png" alt="Mockup 2">
+        <img src="images/mockup2.png" alt="Mockup 2" onclick="openLightbox(this)">
       </div>
       <div class="mockup-placeholder">
-        <img src="images/mockup3.png" alt="Mockup 3">
+        <img src="images/mockup3.png" alt="Mockup 3" onclick="openLightbox(this)">
       </div>
       <div class="mockup-placeholder">
-        <img src="images/mockup4.png" alt="Mockup 4">
+        <img src="images/mockup4.png" alt="Mockup 4" onclick="openLightbox(this)">
       </div>
     </div>
     </section>
@@ -120,5 +120,11 @@
   <footer>
     <p>&copy; 2025 Storyworks. All rights reserved.</p>
   </footer>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Expanded mockup">
+</div>
+<script src="js/script.js"></script>
+
+
 </body>
 </html>
