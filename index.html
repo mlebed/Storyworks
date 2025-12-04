@@ -39,22 +39,27 @@
       <div class="problem-box">
         <h3>Problem</h3>
         <p>
-      Traditional tools are limited and always rely on one person to keep everything organized.
+        Here is a short description that always shows up between the title and the expand button.
         </p>
-        <button class="expand-btn" onclick="toggleText('problem-text')">Expand</button>
         <p id="problem-text" class="hidden-text">
-          <strong>BUT IT IS NEVER JUST ONE PERSON’S JOB TO DOCUMENT AND STAY ORGANIZED​</strong>
+        <strong>BUT IT IS NEVER JUST ONE PERSON’S JOB TO DOCUMENT AND STAY ORGANIZED​</strong>
         </p>
+        <button class="expand-btn" aria-controls="problem-text" aria-expanded="false" onclick="toggleText('problem-text', this)">
+        Expand
+        </button>
       </div>
+      
       <div class="solution-box">
-        <h3>Solution</h3>
-        <p>
-        The team provided an intuitive, interactive, and collaborative platform for creating an organized workflow.
-        </p>
-        <button class="expand-btn" onclick="toggleText('solution-text')">Expand</button>
-        <p id="solution-text" class="hidden-text">
-        The tool is drag-and-drop simple for quick projects but exposes advanced configuration for power users and data teams. An AI-powered file ingestion and organization service for creative teams and agencies.
-        </p>
+      <h3>Solution</h3>
+      <p>
+      The team provided an intuitive, interactive, and collaborative platform for creating an organized workflow.
+      </p>
+      <p id="solution-text" class="hidden-text">
+      The tool is drag-and-drop simple for quick projects but exposes advanced configuration for power users and data teams. An AI-powered file ingestion and organization service for creative teams and agencies.
+      </p>
+      <button class="expand-btn" aria-controls="solution-text" aria-expanded="false" onclick="toggleText('solution-text', this)">
+      Expand
+      </button>
       </div>
     </section>
 
