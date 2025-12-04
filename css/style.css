@@ -566,6 +566,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   padding: 60px 20px;
+  text-align: center;
 }
 
 .problem-box, .solution-box {
@@ -597,7 +598,9 @@ footer {
   color: #555555;
   line-height: 1.6;
   margin: 0;
+  text-align: center;
 }
+
 
 /* Botón expandir */
 .expand-btn {
