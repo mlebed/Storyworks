@@ -69,14 +69,18 @@ header {
   font-weight: 700;
   margin-bottom: 20px;
   color: #1c1c1c;
+  text-align: center;
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .hero-content button {
+  display: block;              /* convierte el botón en bloque */
+  margin: 20px auto 0 auto;    /* lo centra horizontalmente */
   padding: 15px 30px;
   font-size: 16px;
   font-weight: 600;
@@ -93,6 +97,7 @@ header {
   box-shadow: 0 10px 25px rgba(43,138,252,0.3);
 }
 
+
 .hero-image {
   flex: 1;
   min-width: 300px;
@@ -108,11 +113,6 @@ header {
 }
 
 /* ---------- PROBLEM & SOLUTION ---------- */
-.problem-solution {
-  padding: 80px 60px;
-  text-align: center;
-  background-color: #f5f7ff;
-}
 
 .problem-solution h2 {
   font-size: 2rem;
@@ -532,3 +532,77 @@ footer {
   }
 }
 
+.solution-label {
+  display: block;          /* hace que el <img> se comporte como bloque */
+  margin: 0 auto 30px auto;/* centra horizontalmente y da espacio debajo */
+  max-width: 100%;         /* que nunca exceda el ancho del contenedor */
+  width: 100%;             /* ocupa todo el ancho disponible */
+  height: auto;            /* mantiene proporción */
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+
+ /* ---------- PROBLEM & SOLUTION (Minimalist) ---------- */
+.problem-solution {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+.problem-box, .solution-box {
+  background-color: #f9f9f9;   /* tono claro para diferenciar */
+  border: 1px solid #e0e0e0;   /* borde sutil */
+  border-radius: 10px;
+  padding: 25px 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05); /* sombra ligera */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-box:hover, .solution-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.problem-box h3, .solution-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #0d6efd; /* azul principal */
+}
+
+.problem-box p, .solution-box p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Botón expandir */
+.expand-btn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expand-btn:hover {
+  background-color: #2b8afc;
+}
+
+/* Texto oculto */
+.hidden-text {
+  display: none;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #333333;
+}
