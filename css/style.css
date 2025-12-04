@@ -569,31 +569,33 @@ footer {
 }
 
 .problem-box, .solution-box {
-  background-color: #f9f9f9;   /* tono claro para diferenciar */
+  background-color: #f9f9f9;   /* tono claro */
   border: 1px solid #e0e0e0;   /* borde sutil */
-  border-radius: 10px;
-  padding: 25px 20px;
-  width: 280px;
+  border-radius: 12px;
+  padding: 40px 30px;          /* más padding interno */
+  width: 90%;                  /* ocupa casi toda la pantalla */
+  max-width: 1000px;           /* límite para pantallas grandes */
   text-align: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05); /* sombra ligera */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;              /* centrado horizontal */
 }
 
 .problem-box:hover, .solution-box:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
 
 .problem-box h3, .solution-box h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #0d6efd; /* azul principal */
+  font-size: 2rem;           /* títulos más grandes */
+  margin-bottom: 15px;
+  color: #0d6efd;
 }
 
 .problem-box p, .solution-box p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #555555;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
