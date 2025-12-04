@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Storyworks Project</title>
+  <title>Storyworks - Homepage</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="images/logo.png" alt="Storyworks Team Logo">
+        <img src="images/logo.png" alt="Storyworks Logo">
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -24,21 +24,33 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Meet our solution, Label</h1>
-        <p>Discover how it works – The platform that brings your files perfectly organized. Solve your storytelling challenges and engage your audience effortlessly.</p>
-        <button onclick="location.href='features.html'">Learn More</button>
+      <img class="solution-label" src="images/solution-placeholder.png" alt="Solution Image">
+      <h1>Meet our solution</h1>
+      <p>Discover how it works – The platform that brings your files perfectly organized. Solve your storytelling challenges and engage your audience effortlessly.</p>
+      <button onclick="location.href='features.html'">Learn More</button>
       </div>
-      <div class="hero-image">
-        <img src="images/placeholder-product.png" alt="Product Image">
-      </div>
-    </section>
+    <div class="hero-image">
+      <img src="images/placeholder-product.png" alt="Product Image">
+    </div>
+    </section> 
 
     <!-- Problem / Solution -->
     <section class="problem-solution">
-      <h2>Problem & Solution</h2>
-      <p><strong>Problem:</strong> Traditional tools are limited and always rely on one person to keep everything organized.</p>
-      <p><strong>BUT IT IS NEVER JUST ONE PERSON’S JOB TO DOCUMENT AND STAY ORGANIZED​</strong></p>
-      <p><strong>Solution:</strong> Storyworks provides an intuitive, interactive, and collaborative platform for creating stories that captivate your audience.</p>
+      <div class="problem-box">
+        <h3>Problem</h3>
+        <button class="expand-btn" onclick="toggleText('problem-text')">Expand</button>
+        <p id="problem-text" class="hidden-text">
+          Traditional tools are limited and always rely on one person to keep everything organized.
+          BUT IT IS NEVER JUST ONE PERSON’S JOB TO DOCUMENT AND STAY ORGANIZED​
+        </p>
+      </div>
+      <div class="solution-box">
+        <h3>Solution</h3>
+        <button class="expand-btn" onclick="toggleText('solution-text')">Expand</button>
+        <p id="solution-text" class="hidden-text">
+          Storyworks provides an intuitive, interactive, and collaborative platform for creating stories that captivate your audience.
+        </p>
+      </div>
     </section>
 
     <!-- Key Benefits -->
@@ -55,14 +67,9 @@
         </div>
         <div class="benefit">
           <h3>Customizable</h3>
-          <p>Personalize your stories with unique templates and themes.</p>
+          <p>Personalize your files with unique templates.</p>
         </div>
       </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta">
-      <button onclick="location.href='contact.html'">Get Started</button>
     </section>
   </main>
 
@@ -71,5 +78,11 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script>
+    function toggleText(id) {
+      const element = document.getElementById(id);
+      element.style.display = element.style.display === "none" || element.style.display === "" ? "block" : "none";
+    }
+  </script>
 </body>
 </html>
