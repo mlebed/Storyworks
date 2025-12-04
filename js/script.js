@@ -36,3 +36,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+// ---------- Lightbox for Mockup Images ----------
+function openLightbox(img) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  lightboxImg.src = img.src;       // copia la imagen clickeada
+  lightbox.style.display = 'flex'; // muestra el overlay
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
