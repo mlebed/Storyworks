@@ -623,6 +623,11 @@ footer {
   margin: 0 auto;       /* optional: centers the block itself if it has a width */
   max-width: 800px;     /* optional: keeps lines from stretching too wide */
 }
+#problem-text {
+  text-align: center;   /* centers the text horizontally */
+  margin: 0 auto;       /* optional: centers the block itself if it has a width */
+  max-width: 800px;     /* optional: keeps lines from stretching too wide */
+}
 
 .hidden-text {
   display: none;
