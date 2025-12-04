@@ -599,8 +599,8 @@ footer {
   line-height: 1.6;
   margin: 0;
   text-align: center;
+  margin: 10px auto 20px;
 }
-
 
 /* Botón expandir */
 .expand-btn {
