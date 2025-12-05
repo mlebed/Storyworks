@@ -672,3 +672,28 @@ footer {
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
+/* Mission & Vision section */
+.mission-vision {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 800px;
+  padding: 2rem;
+  background: #f0f4f8;
+  border-radius: 10px;
+}
+
+.mission-vision h2 {
+  margin-bottom: 1.5rem;
+}
+
+.mission-vision .mission,
+.mission-vision .vision {
+  margin-bottom: 1.5rem;
+}
+
+.mission-vision h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+
